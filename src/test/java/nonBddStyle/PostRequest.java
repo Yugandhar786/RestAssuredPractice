@@ -9,7 +9,7 @@ public class PostRequest {
 
     public static void main(String[] args) {
         RestAssured.baseURI="http://localhost:3000/";
-        RequestSpecification requestSpecification = RestAssured.given().body("{\n" +
+        RequestSpecification requestSpecification = RestAssured.given().header("Content-Type","application/json").body("{\n" +
                 "    \"FirstName\": \"Yugandhar\",\n" +
                 "    \"lastName\": \"V G1\",\n" +
                 "    \"UserName\": \"Yugandhar1\",\n" +
