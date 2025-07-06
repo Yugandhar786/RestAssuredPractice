@@ -26,6 +26,7 @@ public class Class1 {
 
         ObjectMapper mapper = new ObjectMapper();
         String pojoToJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(pojoConcept);
+
         System.out.println(pojoToJson);
 
     }
